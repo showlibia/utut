@@ -66,11 +66,11 @@ $ PYTHONPATH=fairseq python inference_sts.py \
   --in-wav-path samples/en/1.wav samples/en/2.wav samples/en/3.wav \
   --out-wav-path samples/es/1.wav samples/es/2.wav samples/es/3.wav \
   --src-lang en --tgt-lang es \
-  --mhubert-path /path/to/mhubert_base_vp_en_es_fr_it3.pt \
-  --kmeans-path /path/to/mhubert_base_vp_en_es_fr_it3_L11_km1000.bin \
-  --utut-path /path/to/utut_sts.pt \
-  --vocoder-path /path/to/vocoder_es.pt \
-  --vocoder-cfg-path /path/to/config_es.json
+  --mhubert-path /root/project/ZY/utut/mhubert_base_vp_en_es_fr_it3.pt \
+  --kmeans-path /root/project/ZY/utut/mhubert_base_vp_en_es_fr_it3_L11_km1000.bin \
+  --utut-path /root/project/ZY/utut/utut_sts.pt \
+  --vocoder-path /root/project/ZY/utut/vocoder_es.pt \
+  --vocoder-cfg-path /root/project/ZY/utut/config_es.json
 ```
 
 ### Pipeline for Text-to-Speech Synthesis (TTS)
