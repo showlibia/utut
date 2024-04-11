@@ -26,7 +26,8 @@ class SpeechToSpeechPipeline:
         self.use_cuda = use_cuda
 
     def process_speech2unit(self, speech_path):
-        feats = self.hubert_reader.get_feats(speech_path)
+        feats = self.hubert_reader.get_feats(speech_path) 
+        # 将音频分割成小片段，并使用预训练模型提取每个片段的特征，最后将所有片段的特征拼接起来，从而从整个音频中提取特征
         feats = feats.cpu().numpy()
 
         pred = self.kmeans_model.predict(feats)
